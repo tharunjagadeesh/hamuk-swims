@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="Hamuk Swims: swim analytics and coaching for Galaxy Watch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#041019"/>
+      <stop offset="1" stop-color="#0A2238"/>
+    </linearGradient>
+    <radialGradient id="b1" cx="0.18" cy="0.2" r="0.55"><stop offset="0" stop-color="#0096D6" stop-opacity="0.65"/><stop offset="1" stop-color="#0096D6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b2" cx="0.88" cy="0.35" r="0.5"><stop offset="0" stop-color="#6A4CFF" stop-opacity="0.5"/><stop offset="1" stop-color="#6A4CFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b3" cx="0.45" cy="1.05" r="0.55"><stop offset="0" stop-color="#00D1B2" stop-opacity="0.35"/><stop offset="1" stop-color="#00D1B2" stop-opacity="0"/></radialGradient>
+    <linearGradient id="icon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1366F2"/><stop offset="1" stop-color="#0A2E7A"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.25"/></linearGradient>
+  </defs>
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#b1)"/>
+  <rect width="1280" height="400" fill="url(#b2)"/>
+  <rect width="1280" height="400" fill="url(#b3)"/>
+
+  <!-- app icon (H in the water) -->
+  <g transform="translate(96 88) scale(2.3)">
+    <path d="M54,6 C88,6 102,20 102,54 C102,88 88,102 54,102 C20,102 6,88 6,54 C6,20 20,6 54,6Z" fill="url(#icon)" transform="translate(-6 -6)"/>
+    <g transform="translate(-6 -6)">
+      <path d="M18,57 C25,49 31,49 38,57 C45,65 51,65 58,57 C65,49 71,49 78,57 C83,62 87,62 90,60" fill="none" stroke="#5CE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="30" y="31" width="10" height="46" rx="5" fill="#fff"/>
+      <rect x="68" y="31" width="10" height="46" rx="5" fill="#fff"/>
+    </g>
+  </g>
+
+  <text x="420" y="168" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="-2">Hamuk Swims</text>
+  <text x="422" y="220" fill="#FFFFFF" fill-opacity="0.72" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="27">Pro-level swim analytics &amp; an offline coach for your Galaxy Watch</text>
+
+  <!-- glass pills -->
+  <g font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600">
+    <g transform="translate(422 262)"><rect width="190" height="46" rx="23" fill="url(#glass)" stroke="url(#rim)"/><circle cx="26" cy="23" r="7" fill="#1EA7FD"/><text x="44" y="30" fill="#fff">Swim analysis</text></g>
+    <g transform="translate(626 262)"><rect width="178" height="46" rx="23" fill="url(#glass)" stroke="url(#rim)"/><circle cx="26" cy="23" r="7" fill="#FFC53D"/><text x="44" y="30" fill="#fff">Goal navigator</text></g>
+    <g transform="translate(818 262)"><rect width="196" height="46" rx="23" fill="url(#glass)" stroke="url(#rim)"/><circle cx="26" cy="23" r="7" fill="#8E7CFF"/><text x="44" y="30" fill="#fff">Sleep &amp; recovery</text></g>
+    <g transform="translate(1028 262)"><rect width="150" height="46" rx="23" fill="url(#glass)" stroke="url(#rim)"/><circle cx="26" cy="23" r="7" fill="#2FD27A"/><text x="44" y="30" fill="#fff">On-device</text></g>
+  </g>
+</svg>

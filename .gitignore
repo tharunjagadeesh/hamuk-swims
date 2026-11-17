@@ -1,0 +1,25 @@
+# Build output
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Machine-specific config (SDK paths, JDK paths)
+local.properties
+
+# Signing secrets: never commit
+keystore.properties
+*.jks
+*.keystore
+
+# Built apps
+*.apk
+*.aab
+
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
+.vscode/
