@@ -42,19 +42,18 @@
 ## 🧩 How it works
 
 ```mermaid
-flowchart LR
+flowchart TB
     W["⌚ Galaxy Watch"] --> SH["Samsung Health"]
-    GF["Google Fit / Fitbit / Pixel"] -.-> HC
-    SH --> HC[("Health Connect<br/>on your phone")]
-    HC -->|swims · HR · laps<br/>sleep · steps · HRV| APP["Hamuk Swims"]
-    subgraph APP_IN ["Everything below runs on the phone"]
-      DB[("Room database")] --> ENG["Analysis engine<br/>metrics · load · baselines<br/>HR-vs-pace · lifestyle impact"]
+    SH --> HC[("Health Connect")]
+    GF["Google Fit · Fitbit · Pixel Watch"] -.-> HC
+    HC -->|"swims · HR · lengths · sleep · steps · HRV"| DB
+    subgraph PHONE ["📱 Hamuk Swims: everything runs on the phone"]
+      DB[("Room database")] --> ENG["Analysis engine<br/>metrics · load · baselines<br/>HR vs pace · lifestyle impact"]
       ENG --> PLAN["Plan & goal navigator"]
       ENG --> UI["Glass UI"]
       PLAN --> UI
     end
-    APP --> DB
-    UI -. "optional, your own key" .-> GEM["Google Gemini"]
+    UI -. "optional, your own key" .-> GEM["🤖 Google Gemini"]
 ```
 
 - **Single source of truth:** Health Connect. If two apps record the same swim, the one with more detail (lengths, HR) is kept.
